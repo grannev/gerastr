@@ -1,11 +1,11 @@
-#pragma once
 #include <iostream>
+#pragma once
 
 long long my_abs(long long x);
 
 class str {
 	long long len = 0;
-	char *buffer = new char[1];
+	char *buffer = nullptr; 
 public:
 	// Operator overloading
 		// Internal:
@@ -52,7 +52,7 @@ public:
 		size_t find_first_string(str obj) const;
 		bool contain(char ch) const;
 		bool contain_string(str obj) const;
-		char *read(long long left, long long right) const;
+		str read(long long left, long long right) const;
 		void pop_back();
 		void pop_forward();
 		void remove(long long index, long long amount = 1);
