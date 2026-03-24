@@ -263,7 +263,7 @@ Index "-2" points to the second element from the end, etc. */
 char str::operator[](long long index) const
 {
 	if (index < 0)
-		index = len - index;
+		index = len + index;
 	return buffer[index];
 }
 
